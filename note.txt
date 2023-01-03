@@ -1,0 +1,14 @@
+start mongose ...
+1:npm install mongoose --save
+2:DataBase Connection done ................
+(let URL="mongodb://127.0.0.1:27017/school"
+let OPTION={user:'',pass:''}
+mongoose.connect(URL,OPTION,(err)=>{
+   console.log(err,..."Connection success");
+}))
+...........................................
+
+3:create model in mongoose and scema  name studentmodel 
+
+4:create a new controller and write loigical part 
+
