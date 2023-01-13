@@ -15,8 +15,12 @@ const StudentsController=require("../controllers/StudentsController");
 router.get("/hello-get",helloController.HelloGet)
 router.post("/hello-post",helloController.HelloPost)
 
+
 // Mongose 
 router.post("/InsertStudents",StudentsController.InsertStudents)
+router.get("/ReadStudent",StudentsController.ReadStudent)
+
+
 
 
 module.exports=router
