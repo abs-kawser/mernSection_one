@@ -19,6 +19,8 @@ router.post("/hello-post",helloController.HelloPost)
 // Mongose 
 router.post("/InsertStudents",StudentsController.InsertStudents)
 router.get("/ReadStudent",StudentsController.ReadStudent)
+router.post("/updateStudent/:id",StudentsController.updateStudent)
+
 
 
 

@@ -14,12 +14,12 @@ const mongoose= require('mongoose');
 
 //Security Middleware Implement
 // parse application/json
-app.use(bodyParser.json())
 app.use(cors())
 app.use(helmet())
 app.use(mongoSanitize())
 app.use(xss())
 app.use(hpp())
+app.use(bodyParser.json())
 
 
 

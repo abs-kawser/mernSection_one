@@ -2,7 +2,7 @@ const mongoose= require('mongoose');
 
 
 const DataSchema=mongoose.Schema({
-Name:String,
+Name:{type:String},
 Roll:String,
 Class:String,
 Remarks:String,
