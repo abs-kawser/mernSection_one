@@ -51,7 +51,7 @@ exports.ReadStudent = (req, res) => {
     })
 }
 
-//update data 
+//update data or red data 
 exports.updateStudent=(req,res)=>{
     let id= req.params.id;
     //let Query={_id:id}
