@@ -20,7 +20,7 @@ router.post("/hello-post",helloController.HelloPost)
 router.post("/InsertStudents",StudentsController.InsertStudents)
 router.get("/ReadStudent",StudentsController.ReadStudent)
 router.post("/updateStudent/:id",StudentsController.updateStudent)
-
+router.post("/DeleteStudent/:id",StudentsController.DeleteStudent)
 
 
 

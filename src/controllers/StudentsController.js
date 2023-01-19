@@ -51,7 +51,7 @@ exports.ReadStudent = (req, res) => {
     })
 }
 
-//update data or red data 
+//update data 
 exports.updateStudent=(req,res)=>{
     let id= req.params.id;
     //let Query={_id:id}
@@ -74,6 +74,29 @@ exports.updateStudent=(req,res)=>{
         }
     }) 
 }
+
+
+// Delete 
+exports.DeleteStudent=(req,res)=>{
+    let id=req.params.id;
+    let QUERY={_id:id}
+    StudentsModel.remove(QUERY,(err,data)=>{
+        if(err){
+            res.status(400).json({status:"fail",data:err})
+        }
+        else {
+            res.status(200).json({status:"success",data:data})
+        }
+    })
+
+}
+
+
+
+
+
+
+
 
 
 // exports.updateStudent=(req,res)=>{
