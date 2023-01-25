@@ -41,7 +41,11 @@ app.use(limiter)
 let URL="mongodb://127.0.0.1:27017/Schools"
 let OPTION={user:'',pass:''}
 mongoose.connect(URL,OPTION,(err)=>{
-   console.log(err,..."Connection success");
+   if(err){
+    console.log(err);
+   }else{
+    console.log("Connection success");
+   }
 })
 
 
