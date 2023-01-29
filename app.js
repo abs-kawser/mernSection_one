@@ -37,8 +37,10 @@ const limiter = rateLimit({
 app.use(limiter)
 
 
-//Mongo-sb database connection 
+//Mongo-Db database connection 
+
 let URL="mongodb://127.0.0.1:27017/Schools"
+//let URL="mongodb://localhost:27017"
 let OPTION={user:'',pass:''}
 mongoose.connect(URL,OPTION,(err)=>{
    if(err){
@@ -60,3 +62,10 @@ app.use("*",(req,res)=>{
 })
 
 module.exports=app
+
+
+
+
+
+
+
