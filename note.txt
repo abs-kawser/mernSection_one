@@ -15,6 +15,6 @@ mongoose.connect(URL,OPTION,(err)=>{
 ..........day-59-done......1/20/23
 
 day 60-- last 7 min was custom validate then regex validate
-then start postMan 
+then start postMan rest api doucument
 
 
